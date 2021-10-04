@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 
+import { SumService } from './sum.service';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -10,7 +12,9 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [
+    SumService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
