@@ -1,0 +1,7 @@
+Número 1: <input type="number" pattern="[0-9]+" #operand1Input (click)="operand1Input.select()" (keyup)="roundOperand1($event)" step="1" [(ngModel)]="operand1" /><br/>
+Número 2: <input type="number" pattern="[0-9]+" #operand2Input (click)="operand2Input.select()" (keyup)="roundOperand2($event)" step="1" [(ngModel)]="operand2"/><br/>
+<input type="button" value="Somar" (click)="sum()" />
+<input type="button" value="Subtrair" (click)="subtract()"/>
+<input type="button" value="Multiplicar" (click)="multiply()"/>
+<br/><br/>
+Resultado: <input type="text" disabled [(ngModel)]="result"/>
