@@ -28,7 +28,7 @@ describe('MultiplierBySumService', () => {
   });
   it('multiply(0,5) should return 0', () => {
     sumServiceSpy.sum.and.returnValues(0, 0, 0, 0, 0);
-    expect(multiplyBySumService.multiply(0, 0)).toEqual(0);
+    expect(multiplyBySumService.multiply(0, 5)).toEqual(0);
   });
   it('multiply(3,4) should return 12', () => {
     sumServiceSpy.sum.and.returnValues(3, 6, 9, 12);
